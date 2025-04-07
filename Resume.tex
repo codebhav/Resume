@@ -1,0 +1,170 @@
+\documentclass[letterpaper,11pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{marvosym}
+\usepackage[usenames,dvipsnames]{color}
+\usepackage{verbatim}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage{multicol}
+\usepackage[scaled]{helvet}
+\renewcommand\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+\usepackage{xcolor}
+\input{glyphtounicode}
+
+% Define MIT-style colors
+\definecolor{mitgray}{RGB}{140,140,140}
+\definecolor{mitred}{RGB}{163,31,52}
+
+% Margins
+\addtolength{\oddsidemargin}{-0.7in}
+\addtolength{\evensidemargin}{-0.7in}
+\addtolength{\textwidth}{1.4in}
+\addtolength{\topmargin}{-0.7in}
+\addtolength{\textheight}{1.5in}
+
+\urlstyle{same}
+\raggedbottom
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+% Section formatting
+\titleformat{\section}{
+  \vspace{-4pt}\scshape\raggedright\large\bfseries\color{mitred}
+}{}{0em}{}[\color{mitgray}\titlerule \vspace{-2pt}]
+
+% Custom commands
+\newcommand{\resumeItem}[1]{
+  \item\small{
+    {#1 \vspace{-1pt}}
+  }
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{-2pt}\item
+    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+      \textbf{#1} & #2 \\
+      \textit{\small#3} & \textit{\small #4} \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeProjectHeading}[2]{
+    \item
+    \begin{tabular*}{0.97\textwidth}{l@{\extracolsep{\fill}}r}
+      \small\textbf{#1} & #2 \\
+    \end{tabular*}\vspace{-7pt}
+}
+
+\newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
+\renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
+\newcommand{\resumeItemListStart}{\begin{itemize}}
+\newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
+% Tech listing for projects
+\newcommand{\tech}[1]{{\footnotesize\texttt{#1}}}
+
+% Ensure PDF text can be copied
+\pdfgentounicode=1
+
+\begin{document}
+
+%----------HEADING-----------------
+\begin{center}
+    \textbf{\Huge \color{mitred}VAIBHAV ACHUTHANANDA} \\ \vspace{3pt}
+    \small 
+    \faMapMarker*\ City, State $|$ 
+    \faMobile*\ 123-456-7890 $|$ 
+    \faEnvelope\ email@school.edu $|$ 
+    \faGlobe\ \href{https://whybhav.in/}{whybhav.in} $|$
+    \faLinkedin\ \href{https://www.linkedin.com/in/whybhav}{linkedin.com/in/whybhav} $|$
+    \faGithub\ \href{https://github.com/codebhav}{github.com/codebhav}
+\end{center}
+
+%-----------PROFESSIONAL SUMMARY-----------------
+\section{Summary}
+\small{
+MS Computer Science candidate with proven full-stack development, system administration, and artificial intelligence expertise. Skilled in developing responsive web applications that improved user experience by 40\% and deploying ML models that achieved 87\%
+accuracy. Passionate about leveraging technology to solve real-world problems through innovative solutions.
+}
+
+%-----------EDUCATION-----------------
+\section{Education}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Stevens Institute of Technology}{Expected: May 2026}
+      {Master of Science in Computer Science}{GPA: 4.0/4.0}
+      \resumeItemListStart
+        \resumeItem{Relevant Coursework: Deep Learning, System Administration, Advanced Algorithms, Web Programming}
+      \resumeItemListEnd
+      
+    \resumeSubheading
+      {Lovely Professional University}{Jun 2023}
+      {Bachelor of Technology in Computer Science and Engineering}{GPA: 3.3/4.0}
+  \resumeSubHeadingListEnd
+
+%-----------SKILLS-----------------
+\section{Technical Skills}
+  \begin{itemize}[leftmargin=0.15in, label={}]
+    \small{\item{
+      \textbf{Languages}{: Python, C++, JavaScript, TypeScript, Swift, Go} \\
+      \textbf{Front-End}{: React, Next.js, Svelte, SvelteKit, Tailwind CSS, Three.js, Redux} \\
+      \textbf{Back-End}{: Node.js, Express, REST APIs, GraphQL, Microservices} \\
+      \textbf{Data \& ML}{: TensorFlow, PyTorch, scikit-learn, Keras, NumPy, Pandas, CNN, SVD} \\
+      \textbf{Databases}{: MongoDB, MySQL, PostgreSQL, Firebase, Redis} \\
+      \textbf{DevOps \& Tools}{: Docker, Git, CI/CD, AWS, Google Cloud, Linux, Bash} \\
+    }}
+  \end{itemize}
+
+%-----------EXPERIENCE-----------------
+\section{Professional Experience}
+  \resumeSubHeadingListStart
+    \resumeSubheading
+      {Mohit Mokal Mediation}{Jan 2024 -- Aug 2024}
+      {Software Engineering Consultant}{Bengaluru, India}
+      \resumeItemListStart
+        \resumeItem{Architected and implemented a scalable web application using React, Next.js, and Tailwind CSS that handled 15K+ concurrent users, reducing page load time by 75\% and increasing conversion rate by 40\%}
+        \resumeItem{Designed a microservices-based API architecture with Node.js, implementing automated testing with Jest that increased code coverage to 92\% and reduced deployment bugs by 80\%}
+        \resumeItem{Engineered a content management system leveraging the Blogger API, Firebase, and custom webhooks that automated updates and increased content freshness metrics by 65\%}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
+
+%-----------PROJECTS-----------------
+\section{Technical Projects}
+  \resumeSubHeadingListStart
+    \resumeProjectHeading
+      {\textbf{Computer Vision Emotion Recognition System} \tech{Python • TensorFlow • Swift • ARKit • CNN}}{}
+      \resumeItemListStart
+        \resumeItem{Created a real-time computer vision system that detects and classifies 7 distinct human emotions with 93\% accuracy using a custom-trained CNN architecture with 5 convolutional layers}
+        \resumeItem{Engineered 3D facial representation using ARKit and ARSCNFaceGeometry to generate 52 facial anchor points, enabling precise emotion tracking even in low-light conditions}
+        \resumeItem{Optimized model for mobile deployment by reducing inference time to under 50ms and memory usage by 75\% while maintaining recognition accuracy within 3\% of server-based model}
+      \resumeItemListEnd
+      
+    \resumeProjectHeading
+      {\textbf{Advanced Music Recommendation Engine} \tech{Python • SciPy • NumPy • scikit-learn}}{}
+      \resumeItemListStart
+        \resumeItem{Engineered a hybrid recommendation system processing 1M+ songs and 500K+ user profiles that achieved 87\% recommendation accuracy and increased user engagement time by a factor of 2.3x}
+        \resumeItem{Implemented matrix factorization algorithms (SVD with k=100 latent factors) that reduced computational complexity by 40\% while improving cold-start performance by 35\%}
+        \resumeItem{Deployed ensemble machine learning approach combining collaborative and content-based filtering that reduced the user preference prediction error (RMSE) from 0.98 to 0.32}
+      \resumeItemListEnd
+    
+  \resumeSubHeadingListEnd
+
+%-----------AWARDS & LEADERSHIP-----------------
+\section{Awards \& Leadership}
+  \resumeItemListStart
+    \resumeItem{Published research in the proceedings of the 7th International Joint Conference on Computing Sciences (ICCS-2023)}
+    \resumeItem{Top 6 finalist in the All India Capture The Flag (CTF) competition organized by BIT Mesra with over 200 participants}
+    \resumeItem{Operations Lead at Google Developer Student Clubs, mentored 30+ student developers and organized 12 technical workshops}
+    \resumeItem{University representative at the North Zone Inter-University Chess Championship, reaching quarterfinals}
+  \resumeItemListEnd
+
+\end{document}
