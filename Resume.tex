@@ -49,7 +49,7 @@
 
 \newcommand{\resumeSubheading}[4]{
   \vspace{-2pt}\item
-    \begin{tabular*}{0.97\textwidth}[t]{l@{\extracolsep{\fill}}r}
+    \begin{tabular*}{\textwidth}[t]{l@{\extracolsep{\fill}}r}
       \textbf{#1} & #2 \\
       \textit{\small#3} & \textit{\small #4} \\
     \end{tabular*}\vspace{-7pt}
@@ -64,10 +64,11 @@
 
 \newcommand{\resumeSubItem}[1]{\resumeItem{#1}\vspace{-4pt}}
 \renewcommand\labelitemii{$\vcenter{\hbox{\tiny$\bullet$}}$}
-\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0.15in, label={}]}
+\newcommand{\resumeSubHeadingListStart}{\begin{itemize}[leftmargin=0in, label={}]}
 \newcommand{\resumeSubHeadingListEnd}{\end{itemize}}
 \newcommand{\resumeItemListStart}{\begin{itemize}}
 \newcommand{\resumeItemListEnd}{\end{itemize}\vspace{-5pt}}
+
 
 % Tech listing for projects
 \newcommand{\tech}[1]{{\footnotesize\texttt{#1}}}
@@ -113,7 +114,7 @@ accuracy. Passionate about leveraging technology to solve real-world problems th
 
 %-----------SKILLS-----------------
 \section{Technical Skills}
-  \begin{itemize}[leftmargin=0.15in, label={}]
+  \begin{itemize}[leftmargin=0in, label={}]
     \small{\item{
       \textbf{Languages}{: Python, C++, JavaScript, TypeScript, Swift, Go} \\
       \textbf{Front-End}{: React, Next.js, Svelte, SvelteKit, Tailwind CSS, Three.js, Redux} \\
@@ -160,11 +161,14 @@ accuracy. Passionate about leveraging technology to solve real-world problems th
 
 %-----------AWARDS & LEADERSHIP-----------------
 \section{Awards \& Leadership}
-  \resumeItemListStart
-    \resumeItem{Published research in the proceedings of the 7th International Joint Conference on Computing Sciences (ICCS-2023)}
-    \resumeItem{Top 6 finalist in the All India Capture The Flag (CTF) competition organized by BIT Mesra with over 200 participants}
-    \resumeItem{Operations Lead at Google Developer Student Clubs, mentored 30+ student developers and organized 12 technical workshops}
-    \resumeItem{University representative at the North Zone Inter-University Chess Championship, reaching quarterfinals}
-  \resumeItemListEnd
+  \resumeSubHeadingListStart
+    \resumeProjectHeading{}{} % Empty project heading to maintain structure
+      \resumeItemListStart \vspace{-0.17in}
+        \resumeItem{Published research in the proceedings of the 7th International Joint Conference on Computing Sciences (ICCS-2023)}
+        \resumeItem{Top 6 finalist in the All India Capture The Flag (CTF) competition organized by BIT Mesra with over 200 participants}
+        \resumeItem{Operations Lead at Google Developer Student Clubs, mentored 30+ student developers and organized 12 technical workshops}
+        \resumeItem{University representative at the North Zone Inter-University Chess Championship, reaching quarterfinals}
+      \resumeItemListEnd
+  \resumeSubHeadingListEnd
 
 \end{document}
